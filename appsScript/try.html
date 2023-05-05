@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+   <body>
+
+      <p id = "test"></p>
+
+      <p id = "test5">The expected split needs to be performed as:</p>
+
+      <p id = "test2"></p>
+
+      <p id = "test6">This can be converted to a LET function:</p>
+
+      <p id = "test3"></p>
+
+      <button id = "test7" onclick = "display()">Convert to LET</button>
+
+      <p id = "test4"></p>
+
+      <script>
+        google.script.run.withSuccessHandler(function(data) {
+          var sidebarContent = document.getElementById('test');
+          sidebarContent.innerHTML = data["WarningMessage"];
+          sidebarContent = document.getElementById('test2');
+          sidebarContent.innerHTML = data["ColoredFormula"];
+          sidebarContent = document.getElementById('test3');
+          sidebarContent.innerHTML = data["LET"];
+        }).getResponseJSON();
+        
+        function display() {
+          google.script.run.withSuccessHandler(function(){
+            sidebarContent = document.getElementById('test4');
+            sidebarContent.innerHTML = "Done!";
+            document.getElementById("test").innerHTML = "";
+            document.getElementById("test2").innerHTML = "";
+            document.getElementById("test3").innerHTML = "";
+            document.getElementById("test5").innerHTML = "";
+            document.getElementById("test6").innerHTML = "";
+            document.getElementById("test7").remove();
+          }).setLET();
+        }
+      </script>
+   </body>
+</html>
