@@ -1,5 +1,5 @@
 # UGP-SpreadsheetFormulaSmells
- UGP done in the 6th semester under professor Sruti S Ragavan - Aimed at detecting and notifying users of code smells in their spreadsheet formulas. A descriptive project report can be found here as **'./Report.pdf'**. The presentation slides for this project can be found here as **'./Presentation.pdf'**. Screenshots for the sidebar notifications that this project renders can be found in **'./sidebarExamples'**.
+ UGP done in the 6th semester under professor Sruti S Ragavan - Aimed at detecting and notifying users of code smells in their spreadsheet formulas. A descriptive project report can be found here as **'./Report.pdf'**. The presentation slides for this project can be found here as **'./Presentation.pdf'**. Screenshots for the sidebar notifications that this project renders can be found in **'./sidebarExamples'**. The spreadsheet dataset used to test our script is a public excel sheets dataset - "VEUSES" which is a smaller version to the EUSES spreadsheet corpus (Fisher and Rothermel 2005). it is stored in the **'./VEUSES'** folder. 
 
 # how to use:
  The Google apps script codework is stored in the folder **'appsScript'**. 
